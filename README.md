@@ -55,3 +55,60 @@ Interpolate missing points between known positions
 Optional support for uploading corrected data to tracking system server
 
 Compatible with major GPS tracking formats
+
+-------------------------------------
+
+🧰 Technologies Used
+| Category                | Technology                              |
+| ----------------------- | --------------------------------------- |
+| **Language**            | C#                                      |
+| **Framework**           | .NET 6 / .NET Framework 4.8             |
+| **UI Framework**        | Windows Forms / WPF                     |
+| **Database (optional)** | SQL Server / SQLite                     |
+| **Map Integration**     | GMap.NET / Leaflet (via WebView)        |
+| **Data I/O**            | ExcelDataReader / ClosedXML / CSVHelper |
+| **IDE**                 | Visual Studio                           |
+
+-------------------------------------
+
+🧠 How It Works
+🪄 Workflow
+
+Load Coordinate Data
+Import a dataset (e.g., CSV or Excel) containing GPS coordinates.
+Example format:
+
+Timestamp	Latitude	Longitude
+2025-11-03 10:30:00	23.780573	90.412518
+2025-11-03 10:31:00	23.780600	90.412530
+
+View & Analyze
+Display data points on a map with path visualization.
+
+Correct & Tune
+Adjust coordinates manually or apply a fine-tuning algorithm to reduce drift.
+
+Export / Upload
+Save the corrected data to a file or send it back to the tracking database.
+
+-------------------------------
+
+📊 Benefits
+| Feature               | Benefit                                   |
+| --------------------- | ----------------------------------------- |
+| **Precision Control** | Improves GPS accuracy within 3–5 meters   |
+| **Data Quality**      | Filters out invalid or redundant points   |
+| **User-Friendly**     | Visual correction with map preview        |
+| **Flexible**          | Works with multiple tracking data formats |
+
+------------------------------
+
+🔮 Future Enhancements
+
+✅ Integrate AI/ML-based coordinate smoothing (Kalman filter)
+
+✅ Add real-time correction for live GPS feeds
+
+✅ Support GPX and JSON file formats
+
+✅ Enable cloud synchronization with tracking servers
